@@ -32,7 +32,7 @@ genfscon proc /sys/kernel/sched_lib_name                                        
 genfscon proc /sys/kernel/sched_lib_mask_force                                  u:object_r:proc_sched_lib_mask_cpuinfo:s0
 
 # Powershare
-genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,battery_charger/tx_mode    u:object_r:vendor_sysfs_wlc:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,battery_charger/tx_mode    u:object_r:sysfs_powershare:s0
 
 # RTC
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pmk8350@0:rtc/rtc/rtc0 u:object_r:sysfs_rtc:s0
